@@ -31,7 +31,7 @@ int main(void){
 	}
 	printf("\n");
 	
-	//Parallelise this part//
+	#pragma omp parallel for
 	for(i = 1; i < MAX - 1; i++){
 		array[i] += x[i] + y[i - 1];
 		array[i + 1] += 2*x[i];
