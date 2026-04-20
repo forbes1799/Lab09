@@ -23,6 +23,7 @@ int main(void) {
 
   /* TASK call GPU kernel  */
   
+  cudaDeviceSynchronize();
 
   printf("hello again from CPU\n");
 
