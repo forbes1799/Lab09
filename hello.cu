@@ -21,8 +21,8 @@ int main(void) {
 
   printf("hello on CPU\n");
 
-  /* call GPU kernel  */
-  helloKernel<<<4,3>>> (N);
+  /* TASK call GPU kernel  */
+  
 
   printf("hello again from CPU\n");
 
